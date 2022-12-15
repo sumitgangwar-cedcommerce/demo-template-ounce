@@ -1,11 +1,20 @@
-import { Alert, Button, Card, CheckBox, FlexChild, FlexLayout, FormElement, OverlappingImages, TextField } from '@cedcommerce/ounce-ui'
-import React from 'react'
-import './App.css'
+import {
+  Alert,
+  Button,
+  Card,
+  CheckBox,
+  FlexChild,
+  FlexLayout,
+  FormElement,
+  OverlappingImages,
+  TextField,
+} from "@cedcommerce/ounce-ui";
+import "./App.css";
 
-const App = () => {
+function App() {
   return (
-    <FlexLayout valign='stretch' wrap='nowrap'>
-        <FlexChild desktopWidth='50' tabWidth='50' mobileWidth='50'>
+    <FlexLayout wrap="None">
+      <FlexChild desktopWidth="50" mobileWidth="50" tabWidth="50">
           <Card>
             <div className="form-section">
             <img
@@ -132,89 +141,87 @@ const App = () => {
             </FlexLayout>
             </div>
           </Card>
-        </FlexChild>
-        <FlexChild desktopWidth='50' tabWidth='50' mobileWidth='50'>
-          <div className="banner-secton">
-            <svg
-                viewBox="0 0 960 540"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMax slice"
-                xmlns="http://www.w3.org/2000/svg"
-                class="absolute inset-0 pointer-events-none ng-tns-c135-1"
+      </FlexChild>
+      <FlexChild desktopWidth="50" mobileWidth="0" tabWidth="50">
+        <div className="banner-secton">
+          <svg
+            viewBox="0 0 960 540"
+            width="100%"
+            height="100%"
+            preserveAspectRatio="xMidYMax slice"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute inset-0 pointer-events-none ng-tns-c135-1"
+          >
+            <g
+              fill="none"
+              stroke="#232F41"
+              stroke-width="100"
+              class="text-gray-700 opacity-25 ng-tns-c135-1"
             >
-                <g
-                fill="none"
-                stroke="#232F41"
-                stroke-width="100"
-                class="text-gray-700 opacity-25 ng-tns-c135-1"
-                >
-                <circle r="234" cx="196" cy="23" class="ng-tns-c135-1"></circle>
-                <circle r="234" cx="790" cy="491" class="ng-tns-c135-1"></circle>
-                </g>
-            </svg>
-            <svg
-                viewBox="0 0 220 192"
-                width="150"
-                height="122"
-                fill="none"
-                class="absolute -top-16 -right-16 text-gray-700 ng-tns-c135-1"
-            >
-                <defs class="ng-tns-c135-1">
-                <pattern
-                    id="837c3e70-6c3a-44e6-8854-cc48c737b659"
-                    x="0"
-                    y="0"
-                    width="20"
-                    height="20"
-                    patternUnits="userSpaceOnUse"
-                    class="ng-tns-c135-1"
-                >
-                    <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    fill="currentColor"
-                    class="ng-tns-c135-1"
-                    ></rect>
-                </pattern>
-                </defs>
-                <rect
-                width="220"
-                height="192"
-                fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
+              <circle r="234" cx="196" cy="23" class="ng-tns-c135-1"></circle>
+              <circle r="234" cx="790" cy="491" class="ng-tns-c135-1"></circle>
+            </g>
+          </svg>
+          <svg
+            viewBox="0 0 220 192"
+            width="150"
+            height="122"
+            fill="none"
+            class="absolute -top-16 -right-16 text-gray-700 ng-tns-c135-1"
+          >
+            <defs class="ng-tns-c135-1">
+              <pattern
+                id="837c3e70-6c3a-44e6-8854-cc48c737b659"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
                 class="ng-tns-c135-1"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  fill="currentColor"
+                  class="ng-tns-c135-1"
                 ></rect>
-            </svg>
-          <div className='banner-section__content'>
+              </pattern>
+            </defs>
+            <rect
+              width="220"
+              height="192"
+              fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
+              class="ng-tns-c135-1"
+            ></rect>
+          </svg>
           <FlexLayout direction="vertical">
-              <h1>Welcome to <br /> our community</h1>
-              <p>
+            <h1>Welcome to <br /> our community</h1>
+            <p>
               Fuse helps developers to build organized and well coded dashboards
               full of beautiful and rich modules. Join us and start building
               your application today.
-              </p>
+            </p>
           </FlexLayout>
-          <FlexLayout wrap="noWrap">
-              <OverlappingImages>
+          <FlexLayout halign="fill" wrap="noWrap">
+            <OverlappingImages>
               <img src='https://angular-material.fusetheme.com/assets/images/avatars/female-18.jpg' alt='#' />
               <img src='https://angular-material.fusetheme.com/assets/images/avatars/female-11.jpg' alt='#' />
               <img src='https://angular-material.fusetheme.com/assets/images/avatars/male-09.jpg' alt='#' />
               <img src='https://angular-material.fusetheme.com/assets/images/avatars/male-16.jpg' alt='#' />
-              </OverlappingImages>
-              <p>More than 17k people joined us, it's your turn</p>
+            </OverlappingImages>
+            <p>More than 17k people joined us, it's your turn</p>
           </FlexLayout>
-          </div>
-          </div>
-        </FlexChild>
-        <div className="setting-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
-            </svg>
         </div>
+      </FlexChild>
+      <div className="setting-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
     </FlexLayout>
-  )
+  );
 }
 
-export default App
+export default App;

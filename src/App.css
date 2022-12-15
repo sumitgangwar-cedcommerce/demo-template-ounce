@@ -1,14 +1,15 @@
+
+
 .banner-secton {
   width: 100%;
-  padding: 5rem;
   position: relative;
   min-height: 100vh;
   height: 100%; 
   background-color: #1E293B;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -32,19 +33,28 @@
   color: rgb(51 65 85)
 }
 
+.banner-section__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 50rem;
+}
+
 .alert-box svg {  
   display: none !important;
 }
 
 .form-section {
-  float: right;
   padding: 4rem;
   max-width: 40rem;
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap:2rem;
-  justify-content:flex-end;
+  justify-content: center;
+  margin-left: auto;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .form-section img {
@@ -53,7 +63,7 @@
 
 .setting-btn {
   position: fixed;
-  background-color: red;
+  background-color: #C92627;
   top:275px;
   right:0;
   padding: 10px;
@@ -86,7 +96,7 @@
 }
 
 .setting-btn svg {
-  animation:  App-logo-spin infinite 2s linear;
+  animation:  App-logo-spin infinite 1.5s linear reverse;
 }
 
 @keyframes App-logo-spin {
